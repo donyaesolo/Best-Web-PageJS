@@ -1,0 +1,80 @@
+/* https://paddle8.com/work/ellsworth-kelly/78782-color-squares-4/ */
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+}
+
+/* Divs */
+.center-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.col {
+	height: 100%;
+	width: calc(100%/3);
+}
+.block{
+	display: block;
+}
+
+/* Colors */
+.rams-blue {
+	background-color: #002244;
+}
+
+.pats-silver {
+	background-color: #B0B7BC;
+}
+
+.opaque {
+	opacity: 0.5;
+}
+.red {
+	background-color: #FF666D;
+}
+.pink{
+	background-color: #FFACB2;
+}
+.green {
+	background-color: #CBFFBA;
+}
+.purple {
+	background-color: #706BE8;
+}
+/* Images*/
+.restrict-img-size {
+	max-height: 75%;
+	max-width: 75%;
+}
+.trophy {
+	content: url("images/lombardi_trophy.jpg");
+}
+
+.con{
+	background-image: url(images/confetti.gif);
+}
+
+/*Text*/
+h1{
+	color: white;
+	font-size: 70;
+}
+
+#hidden{
+	color: #002244;
+}
+
+.hidden{
+	color: white;
+}
+.pastel-green{
+	color: #AFFFA8;
+}
+.pastel-red{
+	color: #FF666D;
+}
