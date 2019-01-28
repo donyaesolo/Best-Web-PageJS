@@ -1,11 +1,14 @@
 /* https://paddle8.com/work/ellsworth-kelly/78782-color-squares-4/ */
-
+*{
+ cursor: url(images/cute.cur), auto;	
+}
 body {
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
 	display: flex;
 }
+
 
 /* Divs */
 .center-content {
