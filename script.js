@@ -7,20 +7,20 @@ var lele = "0"
 // "el" stands for the "element" that was just clicked
 function addClass(el){
 	if (change == "1"){
-		document.images["pic"].src = "images/lombardi_trophy.png";
+		document.images["pic"].src = "images/tunes.png";
 		document.getElementById("click").innerHTML = "Click Me!";
 		change = "2";
 	}
 	else if(change == "2"){
-		document.images["con"].src = "images/lombardi_trophy.png";
-		document.images["pic"].src = "images/lombardi_trophy.png";
+		document.images["con"].src = "images/tunes.png";
+		document.images["pic"].src = "images/tunes.png";
 		document.getElementById("click").innerHTML = "Click Me Again!";
 		change = "3";
 	}
 	else{
-		document.images["con"].src = "images/lombardi_trophy.png";
-		document.images["pic"].src = "images/lombardi_trophy.png";
-		document.images["change"].src = "images/lombardi_trophy.png";
+		document.images["con"].src = "images/tunes.png";
+		document.images["pic"].src = "images/tunes.png";
+		document.images["change"].src = "images/tunes.png";
 		document.getElementById("click").innerHTML = "";
 		document.getElementById("hidden").innerHTML = "Double Click Me!";
 		}
@@ -28,22 +28,23 @@ function addClass(el){
 
 function show(el) {
 	if(d == "1"){
+		document.getElementById("ram").classList.remove("addClass");
 		document.getElementById("pat").classList.add("con");
 		document.getElementById("hidden").innerHTML = "Double Click Me Again!";
 		d = "2";
 	}
 	else if (d == "2"){
 		document.getElementById("pat").classList.remove("con");
-		document.getElementById("pat").classList.remove("pats-silver");
-		document.getElementById("ram").classList.remove("rams-blue");
-		document.getElementById("ram").classList.add("pats-silver");
-		document.getElementById("pat").classList.add("rams-blue");
+		document.getElementById("pat").classList.remove("yellow");
+		document.getElementById("ram").classList.remove("blue");
+		document.getElementById("ram").classList.add("yellow");
+		document.getElementById("pat").classList.add("blue");
 		d = "3";
 	}
 	else if (d == "3"){
 		document.getElementById("hidden").innerHTML = "Again!";
-		document.getElementById("ram").classList.remove("pats-silver");
-		document.getElementById("pat").classList.remove("rams-blue");
+		document.getElementById("ram").classList.remove("yellow");
+		document.getElementById("pat").classList.remove("blue");
 		document.getElementById("ram").classList.add("red");
 		document.getElementById("pat").classList.add("pink");
 		d = "4";
@@ -63,31 +64,31 @@ function show(el) {
 	}
 }
 function hey(){
-	alert("psst, it's the Guy to the right of me");
+	alert("Psst, it's the guy to the right of me");
 }
 function hehe(){
 	if (lele == "0") {
 		document.getElementById("he").removeEventListener("click", hey);
 		document.getElementById("he").removeEventListener("dblclick", show);
 		document.getElementById("hidden").innerHTML = "";
-		document.getElementById("hehe").innerHTML = "Hello!!, click me";
+		document.getElementById("hehe").innerHTML = "Hello!! click me";
 		lele = "1";
 	}
 	else if (lele == "1") {
 		document.getElementById("hehe").innerHTML = "Lookie I changed! Click again";
-		document.getElementById("hehe").classList.add("pastel-green");
+		document.getElementById("hehe").classList.add("pastel-purple");
 		lele = "2";
 	}
-	else{
-		document.getElementById("hehe").innerHTML = "Is";
-		document.getElementById("hidden").innerHTML = "Over";
-		document.getElementById("click").innerHTML = "Show!";
+	else{		
+		document.getElementById("click").innerHTML = "Show";	
+		document.getElementById("hidden").innerHTML = "is";
+		document.getElementById("hehe").innerHTML = "over";
 		document.getElementById("ram").classList.remove("red");
 		document.getElementById("pat").classList.remove("pink");
 		document.getElementById("ram").classList.add("green");
 		document.getElementById("pat").classList.add("purple");
-		document.getElementById("hehe").classList.remove("pastel-green");
-		document.images["con"].src = "images/yoda.jpg";
+		document.getElementById("hehe").classList.remove("pastel-purple");
+		document.images["con"].src = "images/cats.jpg";
 		document.images["pic"].src = "images/kitty.gif";
 		document.images["change"].src = "images/kitty.gif";
 	}

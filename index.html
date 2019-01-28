@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel = "icon" href = "images/icon.png">
 		<title>JS Website</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -11,33 +11,35 @@
 	<body>
 		
 		<!-- Notice how each div has an 'onclick' property which links to a function in the JS file -->
-		<div class="col center-content rams-blue" id = "ram">
+		<div class="col center-content blue" id = "ram">
 			<div class = "block">
 				<div>
-					<center><h1 id = "click"> Click me!</h1></center>
+					<center><h1 id = "click"> Click Me!</h1></center>
 				</div>
 				<div>
-					<img class = "restrict-img-size" src = "images/rams_logo.png" id = "pic" onclick = "addClass(this)"></center>
+					<center>
+						<img class = "restrict-img-size" src = "images/cloud.png" id = "pic" onclick = "addClass(this)">
+					</center>
 				</div>
 			</div>
 		</div>
-		<div class="col center-content" ondblclick = "show(this)" id = "he">
+		<div class="col center-content" id = "he">
 			<div class = "block">
 					<div>
-						<center><h1 id = "hidden" class = "hidden"></h1></center>
+						<center><h1 id = "hidden" class = "hidden pastel-purple"></h1></center>
 					</div>
 					<div>
-						<center><img class = "restrict-img-size" src = "images/back.png" id = "con"></center>
+						<center><img ondblclick = "show(this)" class = "restrict-img-size" src = "images/back.png" id = "con"></center>
 					</div>
 			</div>
 		</div>
-		<div class="col center-content pats-silver" id = "pat">
+		<div class="col center-content yellow" id = "pat">
 			<div class = "block">
 				<div>
 					<center><h1 id = "hehe" class = "hidden"></h1></center>
 				</div>
 				<div>
-					<center><img class = "restrict-img-size" src = "images/patriots_logo.png" id = "change" ></center>
+					<center><img class = "restrict-img-size" src = "images/play.png" id = "change" ></center>
 				</div>
 			</div>
 		</div>

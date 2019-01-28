@@ -23,12 +23,12 @@ body {
 }
 
 /* Colors */
-.rams-blue {
-	background-color: #002244;
+.blue {
+	background-color: #6CADFF;
 }
 
-.pats-silver {
-	background-color: #B0B7BC;
+.yellow {
+	background-color: #FFEC6B;
 }
 
 .opaque {
@@ -50,6 +50,7 @@ body {
 .restrict-img-size {
 	max-height: 75%;
 	max-width: 75%;
+	border-radius: 20%;
 }
 .trophy {
 	content: url("images/lombardi_trophy.jpg");
@@ -60,13 +61,14 @@ body {
 }
 
 /*Text*/
+@font-face{
+	font-family: text;
+	src: url(fonts/text.otf);
+}
 h1{
 	color: white;
-	font-size: 70;
-}
-
-#hidden{
-	color: #002244;
+	font-size: 70px;
+	font-family: text;
 }
 
 .hidden{
@@ -77,4 +79,7 @@ h1{
 }
 .pastel-red{
 	color: #FF666D;
+}
+.pastel-purple{
+	color: #706BE8;
 }
