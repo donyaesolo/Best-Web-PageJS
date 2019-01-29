@@ -29,7 +29,7 @@ function addClass(el){
 
 function show(el) {
 	if(d == 1){
-		document.getElementById("ram").classList.remove("addClass");
+		document.getElementById("pic").classList.remove("addClass");
 		document.getElementById("pat").classList.add("con");
 		document.getElementById("hidden").innerHTML = "Double Click Me Again!";
 		d = 2;
